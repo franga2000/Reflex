@@ -1,0 +1,10 @@
+c:\users\franga2000\documents\visual studio 2012\Projects\Reflex\Reflex\bin\Debug\Reflex.exe.config
+c:\users\franga2000\documents\visual studio 2012\Projects\Reflex\Reflex\bin\Debug\Reflex.exe
+c:\users\franga2000\documents\visual studio 2012\Projects\Reflex\Reflex\bin\Debug\Reflex.pdb
+c:\users\franga2000\documents\visual studio 2012\Projects\Reflex\Reflex\bin\Debug\Reflex.xml
+c:\users\franga2000\documents\visual studio 2012\Projects\Reflex\Reflex\obj\Debug\Reflex.Resources.resources
+c:\users\franga2000\documents\visual studio 2012\Projects\Reflex\Reflex\obj\Debug\Reflex.vbproj.GenerateResource.Cache
+c:\users\franga2000\documents\visual studio 2012\Projects\Reflex\Reflex\obj\Debug\Reflex.exe
+c:\users\franga2000\documents\visual studio 2012\Projects\Reflex\Reflex\obj\Debug\Reflex.xml
+c:\users\franga2000\documents\visual studio 2012\Projects\Reflex\Reflex\obj\Debug\Reflex.pdb
+C:\Users\franga2000\documents\visual studio 2012\Projects\Reflex\Reflex\obj\Debug\Reflex.Form2.resources
