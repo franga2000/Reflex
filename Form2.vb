@@ -7,6 +7,7 @@ Public Class Form2
     Dim Light As Boolean = False
     Dim Round As Integer
     Dim Running As Boolean
+    Dim iter As Integer = 10
 
     Public Function GetRandomNum(fromNum As Integer, toNum As Integer)
         Dim myRandom As New Random
@@ -18,7 +19,7 @@ Public Class Form2
         Time = Time + 1
         Label1.Text = Time
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Start()
         Running = True
         PictureBox1.Image = My.Resources.circle_1
         Light = True
@@ -43,26 +44,26 @@ Public Class Form2
                 ButtonPressed = True
             End If
         Else
-            Button1.PerformClick()
+            Start()
         End If
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         Timer2.Stop()
-        If Times < 5 Then
+        If Times < Iter Then
             Times = Times + 1
-            Button1.PerformClick()
+            Start()
         Else
             Round = Round + 1
             My.Computer.FileSystem.WriteAllText("./Data/Round.txt", Round, False)
             Dim theWriter As New StreamWriter("./Data/" & Round & ".txt")
             For Each currentElement As String In Report
-                theWriter.WriteLine(currentElement) 
+                theWriter.WriteLine(currentElement)
             Next
             theWriter.Close()
-            Times = 0
             Report.Clear()
-            MsgBox("Finished!", , "Reflex")
+            MsgBox("Finished!" & vbNewLine & "File: " & Times & ".txt", , "Reflex")
+            Times = 0
         End If
 
     End Sub
